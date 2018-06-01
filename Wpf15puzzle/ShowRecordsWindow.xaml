@@ -1,0 +1,19 @@
+﻿<Window x:Class="Wpf15puzzle.ShowRecordsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf15puzzle"
+        mc:Ignorable="d"
+        Title="Records"  Width="300" Height="350" Icon="C:\Users\User\Downloads\favicon (6).ico" >
+    <Grid Width="Auto" Background="#FFFF8900" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition  Height="Auto" MinHeight="30" />
+        </Grid.RowDefinitions>
+        <ScrollViewer >
+            <TextBlock ScrollViewer.VerticalScrollBarVisibility="Auto" Name="TextB" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" />
+        </ScrollViewer>
+        <Button Click="Button_Click"  Content="press to clear the history of records"   FontWeight="Bold" FontSize="15" Grid.Row ="1" BorderBrush="{x:Null}" BorderThickness="1" Background="#FFF2FC08" />
+    </Grid>
+</Window>
